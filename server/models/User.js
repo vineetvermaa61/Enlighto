@@ -44,15 +44,15 @@ const userSchema = new mongoose.Schema({
             ref: "Course",
         }
     ],
-    image: {
-        type: String,
-        required: true,
-    },
     token: {
         type: String,
     },
     resetPasswordExpires: {
         type: Date,
+    },
+    image: {
+        type: String,
+        required: true,
     },
     courseProgress: [
         {
