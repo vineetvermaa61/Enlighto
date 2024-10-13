@@ -7,7 +7,7 @@ const coursesSchema = new mongoose.Schema({
 	instructor: {
 		type: mongoose.Schema.Types.ObjectId,
 		required: true,
-		ref: "User",
+		ref: "user",
 	},
 	whatYouWillLearn: {
 		type: String,
@@ -56,4 +56,4 @@ const coursesSchema = new mongoose.Schema({
 });
 
 // Export the Courses model
-module.exports = mongoose.model("Course", coursesSchema); 
+module.exports = mongoose.model("Course", coursesSchema);
