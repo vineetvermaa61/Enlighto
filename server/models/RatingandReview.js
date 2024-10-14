@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-// Define the RatingAndReview schema
+// Define the RatingAndReview schema here
+
 const ratingAndReviewSchema = new mongoose.Schema({
 	user: {
 		type: mongoose.Schema.Types.ObjectId,
