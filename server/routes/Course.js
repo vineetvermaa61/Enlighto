@@ -43,7 +43,7 @@ const {
   createRating,
   getAverageRating,
   getAllRatingReview,
-} = require("../controllers/RatingAndReview")
+} = require("../controllers/RatingAndReviews")
 const {
   updateCourseProgress,
   getProgressPercentage,
