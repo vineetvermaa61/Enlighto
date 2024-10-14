@@ -36,8 +36,9 @@ const ViewCourse = () => {
             <div>
                 <Outlet />
             </div>
+            {reviewModal && (<CourseReviewModal setReviewModal={setReviewModal} />)}
         </div>
-        {reviewModal && <CourseReviewModal setReviewModal={setReviewModal} />}
+        
     </>
   )
 }
