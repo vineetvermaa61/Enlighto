@@ -22,12 +22,25 @@ database.connect();
 // middlewares
 app.use(express.json());
 app.use(cookieParser());
+
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: "*",
         credentials: true,
     })
 )
+
+// const whitelist = process.env.CORS_ORIGIN
+//   ? JSON.parse(process.env.CORS_ORIGIN)
+//   : ["*"];
+
+// app.use(
+//   cors({
+//     origin: whitelist,
+//     credentials: true,
+//     maxAge: 14400,
+//   })
+// );
 
 app.use(
     fileUpload({
