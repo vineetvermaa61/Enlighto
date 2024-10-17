@@ -32,6 +32,12 @@ Enlighto is a comprehensive ed-tech platform built with the **MERN stack** (Mong
 
 Enlighto follows a **client-server architecture** with three main components: **Front-end**, **Back-end**, and **Database**.
 
+**Architecture Diagram**
+
+Here is a high-level diagram that illustrates the architecture of the **Enlighto** ed-tech platform:
+![WhatsApp Image 2024-10-18 at 01 38 27_de6d572d](https://github.com/user-attachments/assets/199f3c29-818e-4699-a70a-9fa06298ce65)
+
+
 ### Front-end
 
 The front-end is developed using **React.js**, allowing for dynamic, responsive, and interactive interfaces. It interacts with the back-end using RESTful APIs and displays course content, user dashboards, and more.
