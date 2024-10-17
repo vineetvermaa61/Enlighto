@@ -100,8 +100,8 @@ export default function CourseBuilderForm() {
   }
 
   return (
-    <div className="space-y-8 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-6">
-      <p className="text-2xl font-semibold text-richblack-5">Course Builder</p>
+    <div className="space-y-8 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-4 md:p-6">
+      <p className="text-xl md:text-2xl font-semibold text-richblack-5">Course Builder</p>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <div className="flex flex-col space-y-2">
           <label className="text-sm text-richblack-5" htmlFor="sectionName">
@@ -120,7 +120,7 @@ export default function CourseBuilderForm() {
             </span>
           )}
         </div>
-        <div className="flex items-end gap-x-4">
+        <div className="flex flex-col sm:flex-row items-end gap-x-4 gap-y-2">
           <IconBtn
             type="submit"
             disabled={loading}
@@ -144,10 +144,10 @@ export default function CourseBuilderForm() {
         <NestedView handleChangeEditSectionName={handleChangeEditSectionName} />
       )}
       {/* Next Prev Button */}
-      <div className="flex justify-end gap-x-3">
+      <div className="flex flex-col sm:flex-row justify-end gap-3">
         <button
           onClick={goBack}
-          className={`flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900`}
+          className="flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900"
         >
           Back
         </button>
@@ -157,4 +157,64 @@ export default function CourseBuilderForm() {
       </div>
     </div>
   )
+  
+
+  // return (
+  //   <div className="space-y-8 rounded-md border-[1px] border-richblack-700 bg-richblack-800 p-6">
+  //     <p className="text-2xl font-semibold text-richblack-5">Course Builder</p>
+  //     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+  //       <div className="flex flex-col space-y-2">
+  //         <label className="text-sm text-richblack-5" htmlFor="sectionName">
+  //           Section Name <sup className="text-pink-200">*</sup>
+  //         </label>
+  //         <input
+  //           id="sectionName"
+  //           disabled={loading}
+  //           placeholder="Add a section to build your course"
+  //           {...register("sectionName", { required: true })}
+  //           className="form-style w-full"
+  //         />
+  //         {errors.sectionName && (
+  //           <span className="ml-2 text-xs tracking-wide text-pink-200">
+  //             Section name is required
+  //           </span>
+  //         )}
+  //       </div>
+  //       <div className="flex items-end gap-x-4">
+  //         <IconBtn
+  //           type="submit"
+  //           disabled={loading}
+  //           text={editSectionName ? "Edit Section Name" : "Create Section"}
+  //           outline={true}
+  //         >
+  //           <IoAddCircleOutline size={20} className="text-yellow-50" />
+  //         </IconBtn>
+  //         {editSectionName && (
+  //           <button
+  //             type="button"
+  //             onClick={cancelEdit}
+  //             className="text-sm text-richblack-300 underline"
+  //           >
+  //             Cancel Edit
+  //           </button>
+  //         )}
+  //       </div>
+  //     </form>
+  //     {course.courseContent.length > 0 && (
+  //       <NestedView handleChangeEditSectionName={handleChangeEditSectionName} />
+  //     )}
+  //     {/* Next Prev Button */}
+  //     <div className="flex justify-end gap-x-3">
+  //       <button
+  //         onClick={goBack}
+  //         className={`flex cursor-pointer items-center gap-x-2 rounded-md bg-richblack-300 py-[8px] px-[20px] font-semibold text-richblack-900`}
+  //       >
+  //         Back
+  //       </button>
+  //       <IconBtn disabled={loading} text="Next" onclick={goToNext}>
+  //         <MdNavigateNext />
+  //       </IconBtn>
+  //     </div>
+  //   </div>
+  // )
 }

@@ -47,6 +47,51 @@ export default function InstructorChart({ courses }) {
     maintainAspectRatio: false,
   }
 
+  // return (
+  //   <div className="flex flex-1 flex-col gap-y-4 rounded-md bg-richblack-800 p-4 sm:p-6">
+  //     {/* Title */}
+  //     <p className="text-lg font-bold text-richblack-5">Visualize</p>
+  
+  //     {/* Buttons to switch charts */}
+  //     <div className="space-x-2 sm:space-x-4 font-semibold flex flex-wrap">
+  //       {/* Button to switch to the "students" chart */}
+  //       <button
+  //         onClick={() => setCurrChart("students")}
+  //         className={`rounded-sm p-1 px-2 sm:px-3 transition-all duration-200 ${
+  //           currChart === "students"
+  //             ? "bg-richblack-700 text-yellow-50"
+  //             : "text-yellow-400"
+  //         }`}
+  //       >
+  //         Students
+  //       </button>
+  
+  //       {/* Button to switch to the "income" chart */}
+  //       <button
+  //         onClick={() => setCurrChart("income")}
+  //         className={`rounded-sm p-1 px-2 sm:px-3 transition-all duration-200 ${
+  //           currChart === "income"
+  //             ? "bg-richblack-700 text-yellow-50"
+  //             : "text-yellow-400"
+  //         }`}
+  //       >
+  //         Income
+  //       </button>
+  //     </div>
+  
+  //     {/* Chart Container */}
+  //     <div className="relative mx-auto aspect-square w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl h-auto">
+  //       {/* Render the Pie chart based on the selected chart */}
+  //       <Pie
+  //         data={currChart === "students" ? chartDataStudents : chartIncomeData}
+  //         options={options}
+  //       />
+  //     </div>
+  //   </div>
+  // )
+  
+  
+
   return (
     <div className="flex flex-1 flex-col gap-y-4 rounded-md bg-richblack-800 p-6">
       <p className="text-lg font-bold text-richblack-5">Visualize</p>
@@ -74,9 +119,9 @@ export default function InstructorChart({ courses }) {
           Income
         </button>
       </div>
-      <div className="relative mx-auto aspect-square h-full w-full">
+      <div className="relative mx-auto aspect-square h-full w-[full]">
         {/* Render the Pie chart based on the selected chart */}
-        <Pie
+        <Pie className=""
           data={currChart === "students" ? chartDataStudents : chartIncomeData}
           options={options}
         />

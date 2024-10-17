@@ -18,6 +18,7 @@
     "react-icons": "^5.3.0",
     "react-markdown": "^9.0.1",
     "react-otp-input": "^3.1.1",
+    "react-player": "^2.16.0",
     "react-rating-stars-component": "^2.2.0",
     "react-redux": "^9.1.2",
     "react-router-dom": "^6.26.2",
@@ -31,11 +32,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git"
+    "url": "git+https://github.com/vineetvermaa61"
   },
-  "author": "Pranay Gupta",
+  "author": "Vineet Verma",
   "bugs": {
-    "url": "https://github.com/thepranaygupta/react-tailwind-css-starter-pack/issues"
+    "url": "https://github.com/vineetvermaa61"
   },
   "scripts": {
     "start": "react-scripts start",

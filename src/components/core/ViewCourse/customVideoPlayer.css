@@ -1,0 +1,37 @@
+/* Custom styling for the video player progress bar and controls */
+.video-react .video-react-control-bar {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent control bar */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .video-react .video-react-progress-holder {
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for progress */
+  }
+  
+  .video-react .video-react-progress-bar {
+    background-color: #ffcc00; /* Modern yellow progress bar */
+  }
+  
+  .video-react .video-react-big-play-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent play button */
+  }
+  
+  .video-react .video-react-playback-rate {
+    color: #ffffff; /* White text for speed control */
+  }
+  
+  /* Hide the progress bar and controls when not hovering */
+  .video-react.video-hover-hide .video-react-control-bar {
+    opacity: 0;
+  }
+  
+  .video-react:hover .video-react-control-bar {
+    opacity: 1; /* Show controls on hover */
+  }
+  
+  .video-react .video-react-mute-control button,
+  .video-react .video-react-volume-menu-button button {
+    color: #ffffff; /* White color for volume controls */
+  }
+  
+  

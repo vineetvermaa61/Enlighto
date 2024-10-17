@@ -98,7 +98,10 @@ module.exports = {
       yellow: {
         5: "#FFF970",
         25: "#FFE83D",
-        50: "#FFD60A",
+        // 50: "#28BA67",
+        // 50: "#7DF180",
+        50: "#FF9800",
+        // 50: "#A7FF58",
         100: "#E7C009",
         200: "#CFAB08",
         300: "#B69507",
@@ -108,6 +111,20 @@ module.exports = {
         700: "#553F02",
         800: "#3D2A01",
         900: "#251400",
+      },
+      green: {
+        5: "#F0FDF4",    // Equivalent to bg-green-50
+        25: "#DCFCE7",   // Equivalent to bg-green-100
+        50: "#BBF7D0",   // Equivalent to bg-green-200
+        100: "#86EFAC",  // Equivalent to bg-green-300
+        200: "#4ADE80",  // Equivalent to bg-green-400
+        300: "#22C55E",  // Equivalent to bg-green-500
+        400: "#16A34A",  // Equivalent to bg-green-600
+        500: "#15803D",  // Equivalent to bg-green-700
+        600: "#166534",  // Equivalent to bg-green-800
+        700: "#FFBD03",  // Equivalent to bg-green-900
+        800: "#0F421C",  // Darker green shade
+        900: "#0B3C1C",  // Deep dark green
       },
       "pure-greys": {
         5: "#F9F9F9",

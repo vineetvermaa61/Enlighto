@@ -1,7 +1,11 @@
+
+const { passwordResetMail } = require("../mail/templates/passwordResetMail");
+
 const User = require("../models/User")
 const mailSender = require("../utils/mailSender")
 const bcrypt = require("bcrypt")
 const crypto = require("crypto")
+
 exports.resetPasswordToken = async (req, res) => {
   try {
     const email = req.body.email
@@ -27,11 +31,19 @@ exports.resetPasswordToken = async (req, res) => {
     // const url = `http://localhost:3000/update-password/${token}`
     const url = `https://enlighto.vercel.app/update-password/${token}`
 
+    // await mailSender(
+    //   email,
+    //   "Password Reset",
+    //   // `Your Link for email verification is ${url}. Please click this url to reset your password.`
+    //   passwordResetMail(url)
+
+    // )
     await mailSender(
       email,
       "Password Reset",
-      `Your Link for email verification is ${url}. Please click this url to reset your password.`
-    )
+      passwordResetMail(url)
+    );
+    
 
     res.json({
       success: true,

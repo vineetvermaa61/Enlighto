@@ -14,17 +14,27 @@ import { FreeMode, Pagination } from "swiper/modules"
 import Course_Card from "./Course_Card"
 
 function Course_Slider({ Courses }) {
+
   return (
     <>
       {Courses?.length ? (
         <Swiper
           slidesPerView={1}
-          spaceBetween={25}
+          spaceBetween={15}  
           loop={true}
           modules={[FreeMode, Pagination]}
           breakpoints={{
+            640: {
+              slidesPerView: 1,  // 1 slide for small screens
+              spaceBetween: 20,  // Slightly larger space between slides
+            },
+            768: {
+              slidesPerView: 2,  // 2 slides for tablets
+              spaceBetween: 20,
+            },
             1024: {
-              slidesPerView: 3,
+              slidesPerView: 3,  // 3 slides for larger screens
+              spaceBetween: 25,
             },
           }}
           className="max-h-[30rem]"
@@ -36,10 +46,41 @@ function Course_Slider({ Courses }) {
           ))}
         </Swiper>
       ) : (
-        <p className="text-xl text-richblack-5">No Course Found</p>
+        <p className="text-lg sm:text-xl text-richblack-5">No Course Found</p>
       )}
     </>
-  )
+  );
+  
+
+
+  // return (
+  //   <>
+  //     {Courses?.length ? (
+  //       <Swiper
+  //         slidesPerView={1}
+  //         spaceBetween={25}
+  //         loop={true}
+  //         modules={[FreeMode, Pagination]}
+  //         breakpoints={{
+  //           1024: {
+  //             slidesPerView: 3,
+  //           },
+  //         }}
+  //         className="max-h-[30rem]"
+  //       >
+  //         {Courses?.map((course, i) => (
+  //           <SwiperSlide key={i}>
+  //             <Course_Card course={course} Height={"h-[250px]"} />
+  //           </SwiperSlide>
+  //         ))}
+  //       </Swiper>
+  //     ) : (
+  //       <p className="text-xl text-richblack-5">No Course Found</p>
+  //     )}
+  //   </>
+  // )
+
+
 }
 
 export default Course_Slider

@@ -4,6 +4,7 @@ import { HiOutlineGlobeAlt } from "react-icons/hi"
 import ReactMarkdown from 'react-markdown';
 import { useDispatch, useSelector } from "react-redux"
 import { useNavigate, useParams } from "react-router-dom"
+import { toast } from "react-hot-toast"
 
 import ConfirmationModal from "../components/common/ConfirmationModal"
 import Footer from "../components/common/Footer"
@@ -15,6 +16,9 @@ import { fetchCourseDetails } from "../services/operations/courseDetailsAPI"
 import { BuyCourse } from "../services/operations/studentFeaturesAPI"
 import GetAvgRating from "../utils/avgRating"
 import Error from "./Error"
+import { addToCart } from "../slices/cartSlice";
+import { ACCOUNT_TYPE } from "../utils/constants";
+// import { ACCOUNT_TYPE } from "../../../utils/constants"
 
 function CourseDetails() {
   const { user } = useSelector((state) => state.profile)
@@ -116,6 +120,28 @@ function CourseDetails() {
     })
   }
 
+  const handleAddToCart = () => {
+    if (user && user?.accountType === ACCOUNT_TYPE.INSTRUCTOR) {
+      toast.error("You are an Instructor. You can't buy a course.");
+      return;
+    }
+    if (token) {
+      dispatch(addToCart(response?.data?.courseDetails)); // Dispatching the course to the cart
+      toast.success("Course added to cart.");
+      return;
+    }
+    // Show login confirmation modal if the user is not logged in
+    setConfirmationModal({
+      text1: "You are not logged in!",
+      text2: "Please login to add To Cart",
+      btn1Text: "Login",
+      btn2Text: "Cancel",
+      btn1Handler: () => navigate("/login"),
+      btn2Handler: () => setConfirmationModal(null),
+    });
+  };
+  
+
   if (paymentLoading) {
     // console.log("payment loading")
     return (
@@ -149,7 +175,7 @@ function CourseDetails() {
               </div>
               <p className={`text-richblack-200`}>{courseDescription}</p>
               <div className="text-md flex flex-wrap items-center gap-2">
-                <span className="text-yellow-25">{avgReviewCount}</span>
+                <span className="text-yellow-25">{isNaN(avgReviewCount) ? "0" : avgReviewCount}</span>
                 <RatingStars Review_Count={avgReviewCount} Star_Size={24} />
                 <span>{`(${ratingAndReviews.length} reviews)`}</span>
                 <span>{`${studentsEnroled.length} students enrolled`}</span>
@@ -174,10 +200,32 @@ function CourseDetails() {
               <p className="space-x-3 pb-4 text-3xl font-semibold text-richblack-5">
                 Rs. {price}
               </p>
-              <button className="yellowButton" onClick={handleBuyCourse}>
-                Buy Now
-              </button>
-              <button className="blackButton">Add to Cart</button>
+              <div className="flex w-full flex-col gap-4 border-y border-y-richblack-500 py-4 lg:hidden">
+  <p className="space-x-3 pb-4 text-3xl font-semibold text-richblack-5">
+    Rs. {price}
+  </p>
+  {user && response?.data?.courseDetails?.studentsEnroled.includes(user?._id) ? (
+    <button 
+      className="yellowButton" 
+      onClick={() => navigate("/dashboard/enrolled-courses")}
+    >
+      Go To Course
+    </button>
+  ) : (
+    <>
+      <button className="yellowButton" onClick={handleBuyCourse}>
+        Buy Now
+      </button>
+      <button 
+        className="blackButton" 
+        onClick={handleAddToCart} // Use the same handler for "Add to Cart"
+      >
+        Add to Cart
+      </button>
+    </>
+  )}
+</div>
+
             </div>
           </div>
           {/* Courses Card */}
@@ -216,7 +264,7 @@ function CourseDetails() {
                 </div>
                 <div>
                   <button
-                    className="text-yellow-25"
+                    className="text-yellow-50"
                     onClick={() => setIsActive([])}
                   >
                     Collapse all sections
