@@ -110,11 +110,11 @@ Enlighto's back-end is built using **Node.js**, **Express.js**, and **MongoDB**.
 Enlighto uses a **RESTful API** design for communication between the front-end and back-end. The API is built using **Node.js** and **Express.js** and follows standard HTTP methods like **GET**, **POST**, **PUT**, and **DELETE**.
 
 ### Sample Endpoints:
-- `/api/auth/signup (POST)` – Register a new user.
-- `/api/auth/login (POST)` – Log in and get a JWT token.
-- `/api/courses (GET)` – Get a list of all courses.
-- `/api/courses/:id (POST)` – Create a new course.
-- `/api/courses/:id/rate (POST)` – Add a rating to a course.
+- `/api/v1/auth/signup (POST)` – Register a new user.
+- `/api/v1/auth/login (POST)` – Log in and get a JWT token.
+- `/api/v1/courses (GET)` – Get a list of all courses.
+- `/api/v1/courses/:id (POST)` – Create a new course.
+- `/api/v1/courses/:id/rate (POST)` – Add a rating to a course.
 
 ---
 
