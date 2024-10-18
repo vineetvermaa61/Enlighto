@@ -2,6 +2,10 @@
 
 **Enlighto** is a full-stack ed-tech platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides students with an engaging learning experience through course creation, consumption, and ratings. Instructors can easily manage their courses, while secure authentication and payment integration enhance the platform's usability. The project includes RESTful APIs, media management via Cloudinary, and future enhancements like mobile apps and gamification.
 
+![image](https://github.com/user-attachments/assets/8553378b-dae1-45f8-8082-1a7b73fc182c)
+
+## [![See More Screenshots](https://img.shields.io/badge/See%20More-Screenshots-blue?style=for-the-badge)](#screenshots)
+
 ---
 
 ## Table of Contents
@@ -25,6 +29,19 @@ Enlighto is a comprehensive ed-tech platform built with the **MERN stack** (Mong
 - **Secure authentication** and **payment integration**
 - **Cloud-based media management** using Cloudinary
 - **RESTful APIs** for front-end and back-end communication
+
+---
+
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/d6abada7-8f3f-433c-a0ce-6ab62e14c52d)
+![image](https://github.com/user-attachments/assets/ab066474-a470-4393-93f2-57d9cbf05072)
+![image](https://github.com/user-attachments/assets/35c97019-999c-418c-997c-cf5b6f4972d3)
+![image](https://github.com/user-attachments/assets/9c673fe0-026c-4e09-b71c-c73ecc61794f)
+![image](https://github.com/user-attachments/assets/5b806abb-4152-416e-99ef-5c220d248daa)
+![image](https://github.com/user-attachments/assets/7a72cd27-b512-436e-915d-ef785e56cf2d)
+
+
 
 ---
 
