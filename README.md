@@ -33,6 +33,17 @@ Enlighto is a comprehensive ed-tech platform built with the **MERN stack** (Mong
 ---
 
 
+## System Architecture
+
+Enlighto follows a **client-server architecture** with three main components: **Front-end**, **Back-end**, and **Database**.
+
+**Architecture Diagram**
+
+Here is a high-level diagram that illustrates the architecture of the **Enlighto** ed-tech platform:
+![WhatsApp Image 2024-10-18 at 01 38 27_de6d572d](https://github.com/user-attachments/assets/199f3c29-818e-4699-a70a-9fa06298ce65)
+
+---
+
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/d6abada7-8f3f-433c-a0ce-6ab62e14c52d)
 ![image](https://github.com/user-attachments/assets/ab066474-a470-4393-93f2-57d9cbf05072)
@@ -44,16 +55,6 @@ Enlighto is a comprehensive ed-tech platform built with the **MERN stack** (Mong
 
 
 ---
-
-## System Architecture
-
-Enlighto follows a **client-server architecture** with three main components: **Front-end**, **Back-end**, and **Database**.
-
-**Architecture Diagram**
-
-Here is a high-level diagram that illustrates the architecture of the **Enlighto** ed-tech platform:
-![WhatsApp Image 2024-10-18 at 01 38 27_de6d572d](https://github.com/user-attachments/assets/199f3c29-818e-4699-a70a-9fa06298ce65)
-
 
 ### Front-end
 
