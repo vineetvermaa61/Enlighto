@@ -164,12 +164,12 @@ There are several features planned to enhance the platform:
 ![Screenshot 2024-10-22 210202](https://github.com/user-attachments/assets/5ef0e272-9949-4d4b-9077-d33da23fe662)
 ![Screenshot 2024-10-22 210257](https://github.com/user-attachments/assets/413e4a59-9f3e-4009-b2bc-525005aec43e)
 ![Screenshot 2024-10-22 210343](https://github.com/user-attachments/assets/9663653f-e0dc-4faa-95d2-f3eea1266401)
+![Screenshot 2024-10-23 003419](https://github.com/user-attachments/assets/c1ac4af6-1516-4b3c-818b-3c41e227bc30)
+![Screenshot 2024-10-23 003624](https://github.com/user-attachments/assets/c0aa0f51-20fc-4b9b-8e77-e6a8fdc04b4b)
 ![Screenshot 2024-10-22 210357](https://github.com/user-attachments/assets/bd52da85-6987-43b5-8329-cd4f1e214314)
 ![Screenshot 2024-10-22 210950](https://github.com/user-attachments/assets/ad39e4a2-93e6-485d-94a2-fd4d70e8c53c)
 ![Screenshot 2024-10-22 211002](https://github.com/user-attachments/assets/d34e857a-3b86-4ff8-93a0-962f63f3723d)
 ![Screenshot 2024-10-22 211105](https://github.com/user-attachments/assets/00391879-a490-4058-a8d3-ec1ebc1d9556)
-
-
 ![image](https://github.com/user-attachments/assets/9c673fe0-026c-4e09-b71c-c73ecc61794f)
 ![image](https://github.com/user-attachments/assets/5b806abb-4152-416e-99ef-5c220d248daa)
 ![image](https://github.com/user-attachments/assets/7a72cd27-b512-436e-915d-ef785e56cf2d)
