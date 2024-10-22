@@ -44,18 +44,6 @@ Here is a high-level diagram that illustrates the architecture of the **Enlighto
 
 ---
 
-## Screenshots
-![image](https://github.com/user-attachments/assets/d6abada7-8f3f-433c-a0ce-6ab62e14c52d)
-![image](https://github.com/user-attachments/assets/ab066474-a470-4393-93f2-57d9cbf05072)
-![image](https://github.com/user-attachments/assets/35c97019-999c-418c-997c-cf5b6f4972d3)
-![image](https://github.com/user-attachments/assets/9c673fe0-026c-4e09-b71c-c73ecc61794f)
-![image](https://github.com/user-attachments/assets/5b806abb-4152-416e-99ef-5c220d248daa)
-![image](https://github.com/user-attachments/assets/7a72cd27-b512-436e-915d-ef785e56cf2d)
-
-
-
----
-
 ### Front-end
 
 The front-end is developed using **React.js**, allowing for dynamic, responsive, and interactive interfaces. It interacts with the back-end using RESTful APIs and displays course content, user dashboards, and more.
@@ -157,5 +145,33 @@ There are several features planned to enhance the platform:
 - **Node.js** – JavaScript runtime for building scalable applications
 - **Cloudinary** – Cloud-based media management
 - **Razorpay** – Payment gateway integration
+
+---
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/d6abada7-8f3f-433c-a0ce-6ab62e14c52d)
+![image](https://github.com/user-attachments/assets/ab066474-a470-4393-93f2-57d9cbf05072)
+![image](https://github.com/user-attachments/assets/35c97019-999c-418c-997c-cf5b6f4972d3)
+![Screenshot 2024-10-22 210107](https://github.com/user-attachments/assets/1c646241-07f0-47dd-88bf-582c9e28ff38)
+![Screenshot 2024-10-22 210636](https://github.com/user-attachments/assets/caaf5ce8-d3ce-45df-bb8f-2a46e166f9b2)
+![Screenshot 2024-10-22 210721](https://github.com/user-attachments/assets/ec68135d-8cca-4ad8-9d0f-8bfb0e9044ae)
+![Screenshot 2024-10-22 210817](https://github.com/user-attachments/assets/3fb19493-ce86-4f63-af1b-ac0c57ccd0be)
+![Screenshot 2024-10-22 210737](https://github.com/user-attachments/assets/da22f5e2-3de9-4a8b-9a82-11624239fa23)
+![Screenshot 2024-10-22 210905](https://github.com/user-attachments/assets/592d0e31-59a2-405c-8f36-1b107624ae0b)
+![Screenshot 2024-10-22 211433](https://github.com/user-attachments/assets/8e4d380b-b67c-417e-8483-adfb14e1008a)
+![Screenshot (2374)](https://github.com/user-attachments/assets/91caa06f-523e-4975-b7a9-5dadfe0ebd15)
+![Screenshot 2024-10-22 212125](https://github.com/user-attachments/assets/af27d4a8-3e46-4a1b-8580-530d6ddf051b)
+![Screenshot 2024-10-22 210202](https://github.com/user-attachments/assets/5ef0e272-9949-4d4b-9077-d33da23fe662)
+![Screenshot 2024-10-22 210257](https://github.com/user-attachments/assets/413e4a59-9f3e-4009-b2bc-525005aec43e)
+![Screenshot 2024-10-22 210343](https://github.com/user-attachments/assets/9663653f-e0dc-4faa-95d2-f3eea1266401)
+![Screenshot 2024-10-22 210357](https://github.com/user-attachments/assets/bd52da85-6987-43b5-8329-cd4f1e214314)
+![Screenshot 2024-10-22 210950](https://github.com/user-attachments/assets/ad39e4a2-93e6-485d-94a2-fd4d70e8c53c)
+![Screenshot 2024-10-22 211002](https://github.com/user-attachments/assets/d34e857a-3b86-4ff8-93a0-962f63f3723d)
+![Screenshot 2024-10-22 211105](https://github.com/user-attachments/assets/00391879-a490-4058-a8d3-ec1ebc1d9556)
+
+
+![image](https://github.com/user-attachments/assets/9c673fe0-026c-4e09-b71c-c73ecc61794f)
+![image](https://github.com/user-attachments/assets/5b806abb-4152-416e-99ef-5c220d248daa)
+![image](https://github.com/user-attachments/assets/7a72cd27-b512-436e-915d-ef785e56cf2d)
 
 ---
